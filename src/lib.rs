@@ -8,7 +8,7 @@ mod sum;
 #[path = "refactor1.rs"]
 mod sum;
 
-#[cfg(feature = "r2")]
+#[cfg(all(not(feature = "o"), not(feature = "r1")))]
 #[path = "refactor2.rs"]
 mod sum;
 

@@ -8,7 +8,6 @@ edition = "2021"
 [dependencies]
 
 [features]
-# default = ["r1"]
 r1 = []
 r2 = []
 o = []
