@@ -8,8 +8,11 @@ mod sum;
 #[path = "refactor1.rs"]
 mod sum;
 
-#[cfg(all(not(feature = "o"), not(feature = "r1")))]
+#[cfg(feature = "r2")]
 #[path = "refactor2.rs"]
 mod sum;
 
 pub use crate::sum::sum;
+
+// cargo run --no-default-features  --features r1
+// engine_test lib.rs
